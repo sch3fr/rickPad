@@ -1,6 +1,6 @@
 # RickPad
-*1×1 ortholinear mechanical macropad* <br>
-The macropad firmware is based on QMK, so if you don't need a key that launches Never Gonna Give You Up by Rick Astley, you can easily reprogram it.
+*1×1 ortholinear mechanical macropad* <br><br>
+The macropad firmware is based on QMK, so if you don't need a key that launches Never Gonna Give You Up by Rick Astley, you can easily reprogram it.<br>
 ![Image of the macropad](/Resources/rickpad.jpg "Image of the macropad")
 ## Why
 I needed a macropad as a joke, but I found no single key macropad based on Pro Micro. I know using it for a single key is a waste, 
@@ -19,6 +19,7 @@ In case you do end up using my firmware, you must meet the following requirement
 * Windows 10/11 or Linux With Gnome 40+
 * System language set to English
 * Latest version of Mozilla Firefox
+
 The OS requirement is there because the macro is programmed to press meta key, then it opens Firefox, pastes the URL and presses Enter. Once you press 
 Meta key on newer Windows or Gnome, you can start typing to search. The macro utilizes this exact feature. It may work on other systems, but I have not tested that.
 ## Assemlby guide
