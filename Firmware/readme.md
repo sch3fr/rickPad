@@ -17,6 +17,6 @@ See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_to
 
 ## Bootloader
 
-Enter the bootloader in 3 ways:
+Enter the bootloader:
 
 * **Physical reset button**: Short the RST pin with any of the GND pins on the Pro Micro
