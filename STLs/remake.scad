@@ -16,13 +16,16 @@ length=40;
 cornerRadius=6;
 
 module Plate(){
-    linear_extrude(2){
-    hull(){
-            translate([cornerRadius,cornerRadius,0])circle(r=cornerRadius);
-            translate([width-cornerRadius,cornerRadius,0])circle(r=cornerRadius);
-            translate([cornerRadius,length-cornerRadius,0])circle(r=cornerRadius);
-            translate([width-cornerRadius,length-cornerRadius,0])circle(r=cornerRadius);
+    difference(){
+        linear_extrude(2){
+        hull(){
+                translate([cornerRadius,cornerRadius,0])circle(r=cornerRadius);
+                translate([width-cornerRadius,cornerRadius,0])circle(r=cornerRadius);
+                translate([cornerRadius,length-cornerRadius,0])circle(r=cornerRadius);
+                translate([width-cornerRadius,length-cornerRadius,0])circle(r=cornerRadius);
+            }
         }
+        screwHoles();
     }
 }
 
@@ -37,11 +40,20 @@ module Case(){
                 translate([width-cornerRadius,length-cornerRadius,0])circle(r=cornerRadius);
             }
         }
-        translate([width/2,length/2,9])linear_extrude(5)square(14, center = true);
+        translate([width/2,length/2,9])linear_extrude(5)square(14, center = true); //switch hole
+        translate([width/2-(8.5/2),-1,0])cube([8.5,10,4.5]);//usb port hole
+        translate([width/2-(19/2),1,0])cube([19,36,10]);//hollow inside
+        screwHoles();
     }
 }
 
+module screwHoles(){
+    translate([3,5,0])cylinder(6,1.5,1.5,$fn=60);
+    translate([27,5,0])cylinder(6,1.5,1.5,$fn=60);
+    translate([3,35,0])cylinder(6,1.5,1.5,$fn=60);
+    translate([27,35,0])cylinder(6,1.5,1.5,$fn=60);
+}
 
-//Plate();
-//translate([0,0,2])
-Case();
+Plate();
+//Case();
+
