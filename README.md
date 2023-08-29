@@ -34,3 +34,9 @@ Meta key on newer Windows or Gnome, you can start typing to search. The macro ut
 1. Put on a keycap and enjoy your majestic new macro pad
 ## I wanna know more!
 You can visit [my website](https://sch3fr.github.io/pages/Projects/rickpad.html) with more informations about this. There is even a demonstration video!
+
+## 2023 ReRolled updates
+I decided to rewrite the case files in OpenSCAD. At first I'll focus on rebuilding the case, changing the design a bit
+(because I like flat surfaces more, not because I don't know how to make curve like original in OPSCD shut up).
+Then I'll try to add some QOL features, such as sunken screws. I'll also try to find smaller board, since using whole
+pro micro for this feels wasteful.

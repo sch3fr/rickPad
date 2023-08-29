@@ -2,6 +2,13 @@
 
 //OG rickpadd dimensions: 30*40*(2+13)
 
+/*M3 screw dimesions: 
+Head diameter = 5.5mm
+Head height = 3mm
+Screw diameter = 3mm
+*/
+
+
 plateThickness=2;
 CaseThickness=13;
 width=30;
