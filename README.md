@@ -42,6 +42,10 @@ There is even a demonstration video!
 
 ## 2023 ReRolled updates
 I decided to rewrite the case files in OpenSCAD. At first I'll focus on rebuilding the case, changing the design a bit
-(because I like flat surfaces more, not because I don't know how to make curve like original in OpenSCAD shut up).
+(because I like flat surfaces more, not because I don't know how to make curves in OpenSCAD shut up).
 Then I'll try to add some QOL features, such as sunken screws. I'll also try to find smaller board, since using whole
 pro micro for this feels wasteful.
+### Case 2.0
+![Image of the new version](/Resources/rerolled.jpg "Image of the new version")
+The base of the new design is done. It even saves some filament, since you can print the top case piece upside down,
+eliminating the need for supports.

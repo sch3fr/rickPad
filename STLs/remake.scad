@@ -42,7 +42,7 @@ module Case(){
         }
         translate([width/2,length/2,9])linear_extrude(5)square(14, center = true); //switch hole
         translate([width/2-(8.5/2),-1,0])cube([8.5,10,4.5]);//usb port hole
-        translate([width/2-(19/2),1,0])cube([19,36,10]);//hollow inside
+        translate([width/2-(19/2),1,0])cube([19,35,10]);//hollow inside
         screwHoles();
     }
 }
@@ -54,6 +54,6 @@ module screwHoles(){
     translate([27,35,0])cylinder(6,1.5,1.5,$fn=60);
 }
 
-Plate();
-//Case();
+//Plate();
+Case();
 
